@@ -35,12 +35,12 @@ const Home: NextPage<Props> = (props) => {
 				</p>
 
 				{error && !data && (
-					<div className="mb-12 px-4 py-2 border-red-600 border-l-4 bg-red-50 text-red-900">
+					<div className="mb-12 border-l-4 border-red-600 bg-red-50 px-4 py-2 text-red-900">
 						Fehler beim Laden der Artikel
 					</div>
 				)}
 				{data && (
-					<ul className="grid grid-cols-1 md:grid-cols-2 gap-10">
+					<ul className="grid grid-cols-1 gap-14 md:grid-cols-2 md:gap-10">
 						{data.map((a) => (
 							<li key={a.url}>
 								<Article article={a}></Article>

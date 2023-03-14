@@ -5,7 +5,7 @@ export function Article({ article }: { article: ArticleType }) {
 	return (
 		<div className="@container">
 			<a href={article.url}>
-				<article className="flex flex-col gap-8 @sm:flex-row lg:flex-row">
+				<article className="flex flex-col gap-4 @sm:flex-row @sm:gap-8 lg:flex-row">
 					<picture className="aspect-square h-fit w-full overflow-hidden rounded-2xl bg-gray-50 @sm:w-64">
 						<img alt={article.picture.image.alt} src={article.picture.image.src}></img>
 						{article.picture.sources.map((s) => (
